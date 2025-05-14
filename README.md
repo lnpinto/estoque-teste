@@ -1,7 +1,8 @@
 # Testes automatizados em Java: melhorando a qualidade de nossos projetos.
 
 
-## Contexto
+
+## Contexto: 
 
 Temos a nossa aplicação com uma API REST pública para nossos clientes. Mas, agora, precisamos melhorar a qualidade, precisamos garantir que nossas entregas sejam feitas sem bugs.
 
