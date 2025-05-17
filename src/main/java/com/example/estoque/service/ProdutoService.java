@@ -19,7 +19,7 @@ public class ProdutoService {
         this.repository = repository;
     }
 
-    public void cadastrarProduto(Produto produto){
+    public Produto cadastrarProduto(Produto produto){
 
         ProdutoEntity estoque = repository.findByNome(produto.getNome());
         if(estoque != null){
@@ -28,6 +28,7 @@ public class ProdutoService {
         }else {
             repository.save(new ProdutoEntity(produto));
         }
+        return produto;
     }
 
     public List<Produto> encontrarTodos(){
