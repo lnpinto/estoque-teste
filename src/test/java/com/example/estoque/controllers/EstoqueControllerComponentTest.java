@@ -64,8 +64,8 @@ public class EstoqueControllerComponentTest {
         var result = mockMvc.perform(
                 MockMvcRequestBuilders.post("/estoque")
                         .contentType(MediaType.APPLICATION_JSON)
-                        .content(objectMapper.writeValueAsString(produtoParaCadastrar))
-        ).andReturn().getResponse();
+                        .content(objectMapper.writeValueAsString(produtoParaCadastrar)))
+                        .andReturn().getResponse();
 
         if (result.getStatus() != 200) {
             throw new Exception();
