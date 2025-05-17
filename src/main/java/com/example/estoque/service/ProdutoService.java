@@ -54,4 +54,6 @@ public class ProdutoService {
     public Produto encontrarPorNome(String nome) {
         return new Produto(repository.findByNome(nome));
     }
+
+
 }
